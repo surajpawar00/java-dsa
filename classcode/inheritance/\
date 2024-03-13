@@ -1,0 +1,17 @@
+class Parent {
+	static {
+		System.out.println("In parents static block");
+	}
+
+}
+class Child extends Parents{
+	static {
+		System.out.println("In Child static block ");
+	}
+}
+class Client4{
+	public static void main (String [] args){
+		Child obj = new Child();
+	}
+}
+
